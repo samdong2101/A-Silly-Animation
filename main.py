@@ -177,8 +177,8 @@ def update(frame):
 
 
 center = 64
+fig, ax = plt.subplots()
 def main():
-    fig, ax = plt.subplots()
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--ffmpeg_path",
