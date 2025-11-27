@@ -37,12 +37,9 @@ git clone https://github.com/samdong2101/A-Silly-Animation.git
 cd A-Silly-Animation
 ```
 ---
-## Create the environment from environment.yml if provided
+## Create Conda Environment
 ```bash
 conda env create -f environment.yml
-```
-## Activate the environment
-```bash
 conda activate silly-animation
 ```
 
