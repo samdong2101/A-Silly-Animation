@@ -25,6 +25,12 @@ Make sure you have the following installed on your system:
 - [Git](https://git-scm.com/)
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution)
 - Python >= 3.x (if not using Conda environment)
+---
+# Create the environment from environment.yml if provided
+conda env create -f environment.yml
+
+# Activate the environment
+conda activate silly-animation
 
 ---
 
