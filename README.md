@@ -1,8 +1,8 @@
 A poorly written animation
 
-# Project Name
+# A Silly Animation
 
-Brief description of what this project does and its purpose.
+She was never alone
 
 ---
 
