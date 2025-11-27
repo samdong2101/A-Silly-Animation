@@ -1,0 +1,11 @@
+name: silly-animation         # Name of the environment
+channels:                     # Conda channels to search for packages
+  - defaults
+dependencies:                 # Packages to install
+  - python=3.12
+  - numpy
+  - matplotlib
+  - scipy
+  - pip                      # Optional, for pip packages
+  - pip:
+    - pillow                  # Example of installing via pip
