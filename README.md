@@ -1,1 +1,36 @@
 A poorly written animation
+
+# Project Name
+
+Brief description of what this project does and its purpose.
+
+---
+
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Clone the Repository](#clone-the-repository)
+3. [Set Up Conda Environment](#set-up-conda-environment)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Configuration](#configuration)
+7. [Running Tests](#running-tests)
+8. [Contributing](#contributing)
+9. [License](#license)
+
+---
+
+## Prerequisites
+Make sure you have the following installed on your system:
+
+- [Git](https://git-scm.com/)
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution)
+- Python >= 3.x (if not using Conda environment)
+
+---
+
+## Clone the Repository
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
