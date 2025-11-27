@@ -40,7 +40,7 @@ Clone this repository to your local machine:
 ## Create the environment from environment.yml if provided
 ```conda env create -f environment.yml```
 
-# Activate the environment
+## Activate the environment
 ```conda activate silly-animation```
 
 
