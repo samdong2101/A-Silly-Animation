@@ -12,10 +12,7 @@ She was never alone
 3. [Set Up Conda Environment](#set-up-conda-environment)
 4. [Installation](#install-ffmpeg)
 5. [Usage](#usage)
-6. [Configuration](#configuration)
-7. [Running Tests](#running-tests)
-8. [Contributing](#contributing)
-9. [License](#license)
+
 
 ---
 
