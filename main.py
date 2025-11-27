@@ -208,5 +208,6 @@ def main():
     bitrate=12000  # default is ~1800, increase for higher quality
     )
     ani.save(args.save_path, writer=FFwriter)
+    print(f'Saved Initial animation in {args.save_path}')
 if __name__ == "__main__":
       main()
