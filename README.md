@@ -50,5 +50,15 @@ tar -xvf ffmpeg-release-amd64-static.tar.xz
 export PATH=$HOME/ffmpeg-{YOUR_VERSION}-static:$PATH
 ```
 
+## Usage 
+```bash
+ffmpeg -i /PATH/TO/YOUR/ANIMATION.mp4
+-i ./highway.mp3
+-c:v copy
+-c:a aac
+-strict experimental
+-b:a 192k
+/PATH/TO/YOUR/ANIMATION_WITH_AUDIO.mp4
+
 
 
