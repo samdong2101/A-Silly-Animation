@@ -47,6 +47,7 @@ conda activate silly-animation
 cd $HOME
 wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
 tar -xvf ffmpeg-release-amd64-static.tar.xz
+export PATH=$HOME/ffmpeg-{YOUR_VERSION}-static:$PATH
 ```
 
 
