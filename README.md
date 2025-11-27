@@ -35,7 +35,7 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/samdong2101/A-Silly-Animation.git
 cd A-Silly-Animation
-
+```
 ---
 ## Create the environment from environment.yml if provided
 ```conda env create -f environment.yml```
