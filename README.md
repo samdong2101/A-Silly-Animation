@@ -1,8 +1,7 @@
-A poorly written animation
+
 
 # A Silly Animation
 
-She was never alone
 
 ---
 
