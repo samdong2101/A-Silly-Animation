@@ -43,7 +43,11 @@ conda env create -f environment.yml
 conda activate silly-animation
 ```
 ## Install ffmpeg 
-
+```bash
+cd $HOME
+wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+tar -xvf ffmpeg-release-amd64-static.tar.xz
+```
 
 
 
