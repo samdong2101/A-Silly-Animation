@@ -10,7 +10,7 @@ She was never alone
 1. [Prerequisites](#prerequisites)
 2. [Clone the Repository](#clone-the-repository)
 3. [Set Up Conda Environment](#set-up-conda-environment)
-4. [Installation](#installation)
+4. [Installation](#install-ffmpeg)
 5. [Usage](#usage)
 6. [Configuration](#configuration)
 7. [Running Tests](#running-tests)
@@ -37,12 +37,12 @@ git clone https://github.com/samdong2101/A-Silly-Animation.git
 cd A-Silly-Animation
 ```
 ---
-## Create Conda Environment
+## Set up conda environment
 ```bash
 conda env create -f environment.yml
 conda activate silly-animation
 ```
-
+## Install ffmpeg 
 
 
 
