@@ -32,9 +32,9 @@ Make sure you have the following installed on your system:
 ## Clone the Repository
 Clone this repository to your local machine:
 
-
-```git clone https://github.com/samdong2101/A-Silly-Animation.git```\n
-```cd A-Silly-Animation```
+```bash
+git clone https://github.com/samdong2101/A-Silly-Animation.git
+cd A-Silly-Animation
 
 ---
 ## Create the environment from environment.yml if provided
