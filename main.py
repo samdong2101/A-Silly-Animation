@@ -2,15 +2,17 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import numpy as np
 import random
+import argparse
+import matplotlib as mpl
+from matplotlib import animation
 
-fig, ax = plt.subplots()
-center = 64
 
 def make_tree(ax, on, x_space, y_space, light_color = None, black = False):
     # Create a fresh 128x128 RGB image each frame
     img = np.zeros((128, 128, 3), dtype=np.uint8)
     if black:
         ax.imshow(img)
+        ax.axis("off")
         return None
     def draw_layer(img, y_top, y_bottom, spread, color, num_lights, on=on, x_space = x_space,
                   y_space = y_space, light_color = light_color):
@@ -52,24 +54,25 @@ def make_tree(ax, on, x_space, y_space, light_color = None, black = False):
     ax.imshow(img)
     ax.axis("off")
 
+
 def update(frame):
     ax.clear()
-    if frame > 1 and frame <= 2:
+    if frame > 0 and frame <= 1:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 30, light_color = [255,255,0])
+    elif frame > 1 and frame <= 2:
+        lights_on = (frame % 1 == 0)
+        make_tree(ax, lights_on, x_space = 3, y_space = 30, light_color = [255,255,0])
     elif frame > 2 and frame <= 3:
         lights_on = (frame % 1 == 0)
-        make_tree(ax, lights_on, x_space = 3, y_space = 30, light_color = [255,255,0])
-    elif frame > 3 and frame <= 4:
-        lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 1, y_space = 30, light_color = [255,255,0])
-    elif frame > 10 and frame <= 11:
+    elif frame > 9 and frame <= 10:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 30, light_color = [255,255,0])
-    elif frame > 11 and frame <= 12:
+    elif frame > 10 and frame <= 11:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 3, y_space = 30, light_color = [255,255,0])
-    elif frame > 12 and frame <= 13:
+    elif frame > 11 and frame <= 12:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 1, y_space = 30, light_color = [255,255,0])
     elif frame > 18 and frame <= 19:
@@ -108,52 +111,52 @@ def update(frame):
     elif frame > 37 and frame <= 38:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 1, y_space = 30, light_color = [255,255,0])   
-    elif frame > 38 and frame <=53:
+    elif frame > 38 and frame <=51:
         lights_on = (frame % 2 == 0)
         make_tree(ax, lights_on, x_space = 1, y_space = 30, light_color = [255,255,0])
+    elif frame > 51 and frame <= 52:
+        lights_on = (frame % 1 == 0)
+        make_tree(ax, lights_on, x_space = 5, y_space = 30, light_color = [255,255,0])
+    elif frame > 52 and frame <= 53:
+        lights_on = (frame % 1 == 0)
+        make_tree(ax, lights_on, x_space = 3, y_space = 15, light_color = [255,255,0])
     elif frame > 53 and frame <= 54:
         lights_on = (frame % 1 == 0)
-        make_tree(ax, lights_on, x_space = 5, y_space = 30, light_color = [255,255,0])
-    elif frame > 54 and frame <= 55:
-        lights_on = (frame % 1 == 0)
-        make_tree(ax, lights_on, x_space = 3, y_space = 15, light_color = [255,255,0])
+        make_tree(ax, lights_on, x_space = 1, y_space = 7, light_color = [255,255,0])
     elif frame > 55 and frame <= 56:
         lights_on = (frame % 1 == 0)
-        make_tree(ax, lights_on, x_space = 1, y_space = 7, light_color = [255,255,0])
-    elif frame > 57 and frame <= 58:
-        lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 30, light_color = [255,255,0])
-    elif frame > 58 and frame <= 59:
+    elif frame > 56 and frame <= 57:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 3, y_space = 15, light_color = [255,255,0])
-    elif frame > 59 and frame <= 60:
+    elif frame > 57 and frame <= 58:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 1, y_space = 7, light_color = [255,255,0]) 
-    elif frame>60 and frame<=195:
+    elif frame>58 and frame<=193:
         lights_on = (frame % 2 == 0)
         make_tree(ax, lights_on, x_space = 1, y_space = 7)
-    elif frame>195 and frame<=213:
+    elif frame>193 and frame<=212:
         lights_on = (frame % 2 == 0)
         make_tree(ax, lights_on, x_space = 1, y_space = 5, light_color = [255,255,255])
-    elif frame>213 and frame<=225:
+    elif frame>212 and frame<=225:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 3)
     elif frame>225 and frame<=227:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 3, light_color = [255,0,0])
-    elif frame>227 and frame<=230:
+    elif frame>227 and frame<=229:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 3, light_color = [0,255,0])
-    elif frame>230 and frame<=242:
+    elif frame>229 and frame<=241:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 3)
-    elif frame>242 and frame<=244:
+    elif frame>241 and frame<=243:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 3, light_color = [255,0,0])
-    elif frame>244 and frame<=247:
+    elif frame>243 and frame<=245:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 3, light_color = [0,255,0])
-    elif frame>247 and frame<=270:
+    elif frame>245 and frame<=270:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 3)
     elif frame>270 and frame<=273:
@@ -165,7 +168,7 @@ def update(frame):
     elif frame>276 and frame<=279:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 30)
-    elif frame >288:
+    elif frame >= 287:
         lights_on = (frame % 1 == 0)
         make_tree(ax, lights_on, x_space = 5, y_space = 30, black = True)
     else:
@@ -173,12 +176,37 @@ def update(frame):
         make_tree(ax, lights_on, x_space = 5, y_space = 3, light_color = [0,150,0])
 
 
-ani = FuncAnimation(
-    fig,
-    update,
-    frames=300,      # True/False alternating
-    interval=250,   # ms
-    repeat=True
-)
-
-ani
+center = 64
+def main():
+    fig, ax = plt.subplots()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--ffmpeg_path",
+        type=str,
+        required=True,
+        help="Path to ffmpeg executable"
+    )
+    parser.add_argument(
+        "--save_path",
+        type=str,
+        required=True,
+        help="Path to save the output video"
+    )
+    
+    args = parser.parse_args()
+    mpl.rcParams['animation.ffmpeg_path'] = args.ffmpeg_path
+    ani = FuncAnimation(
+        fig,
+        update,
+        frames=300,      # True/False alternating
+        interval=250,   # ms
+        repeat=True
+    )
+    FFwriter = animation.FFMpegWriter(
+    fps=4,
+    metadata=dict(artist='Me'),
+    bitrate=12000  # default is ~1800, increase for higher quality
+    )
+    ani.save(args.save_path, writer=FFwriter)
+if __name__ == "__main__":
+      main()
