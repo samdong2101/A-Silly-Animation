@@ -38,10 +38,13 @@ cd A-Silly-Animation
 ```
 ---
 ## Create the environment from environment.yml if provided
-```conda env create -f environment.yml```
-
+```bash
+conda env create -f environment.yml
+```
 ## Activate the environment
-```conda activate silly-animation```
+```bash
+conda activate silly-animation
+```
 
 
 
