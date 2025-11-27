@@ -33,7 +33,7 @@ Make sure you have the following installed on your system:
 Clone this repository to your local machine:
 
 
-```git clone https://github.com/samdong2101/A-Silly-Animation.git```
+```git clone https://github.com/samdong2101/A-Silly-Animation.git```\n
 ```cd A-Silly-Animation```
 
 ---
