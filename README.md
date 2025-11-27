@@ -48,6 +48,13 @@ export PATH=$HOME/ffmpeg-{YOUR_VERSION}-static:$PATH
 ```
 
 ## Usage 
+
+## To create initial animation
+```bash
+python main.py --ffmpeg_path /PATH/TO/FFMPEG/EXECUTABLE --save_path /PATH/TO/SAVE/
+```
+## To overlay with audio (in command line) 
+
 ```bash
 ffmpeg -i /PATH/TO/YOUR/ANIMATION.mp4
 -i ./highway.mp3
